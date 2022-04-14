@@ -1,0 +1,15 @@
+python /content/drive/MyDrive/RUN_CLM/project/run_clm_gpt2_bart.py \
+  --raw_data_path /content/drive/MyDrive/RUN_CLM/data/dataG \
+  --tokenized_data_path /content/drive/MyDrive/RUN_CLM/data/tokenizedBART/ \
+  --epochs 10 \
+  --save_epochs_num 5 \
+  --batch_size 4 \
+  --log_step 1 \
+  --stride 512 \
+  --num_pieces 100 \
+  --output_dir /content/drive/MyDrive/RUN_CLM/model_save_bart/ \
+  --pretrained_model uer/bart-base-chinese-cluecorpussmall  \
+  --test_sentences_path /content/drive/MyDrive/RUN_CLM/data/test_data/test_guiSentencesList.npy \
+  --model_choice 2 \
+  --device 0,1,2,3 \
+  --test_random 0 

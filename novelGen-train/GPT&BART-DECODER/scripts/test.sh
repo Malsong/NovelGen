@@ -1,0 +1,11 @@
+python /content/drive/MyDrive/RUN_CLM/project/test_long_ppl.py \
+  --tokenized_data_path /content/drive/MyDrive/RUN_CLM/data/tokenizedBART/ \
+  --batch_size 4 \
+  --log_step 1 \
+  --stride 512 \
+  --num_pieces 100 \
+  --save_ppl_dir /content/drive/MyDrive/RUN_CLM/data/test_data/test_bart_loder_best.csv \
+  --pretrained_model /content/drive/MyDrive/RUN_CLM/model_save_bart/best_model_epoch  \
+  --model_config /content/drive/MyDrive/RUN_CLM/model_save_bart/best_model_epoch/config.json \
+  --model_choice 2 \
+  --device 0

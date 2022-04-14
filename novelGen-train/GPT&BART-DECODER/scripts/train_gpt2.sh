@@ -1,0 +1,16 @@
+python /content/drive/MyDrive/RUN_CLM/project/run_clm_gpt2_bart.py \
+  --raw_data_path /content/drive/MyDrive/RUN_CLM/data/dataG \
+  --tokenized_data_path /content/drive/MyDrive/RUN_CLM/data/tokenizedGPT/ \
+  --epochs 10 \
+  --save_epochs_num 1 \
+  --batch_size 2 \
+  --log_step 1 \
+  --stride 512 \
+  --num_pieces 100 \
+  --output_dir /content/drive/MyDrive/model_save_gpt2_512/ \
+  --pretrained_model /content/drive/MyDrive/train/gpt2-common  \
+  --model_config /content/drive/MyDrive/train/gpt2-common/config.json \
+  --test_sentences_path /content/drive/MyDrive/RUN_CLM/data/test_data/test_guiSentencesList.npy \
+  --model_choice 1 \
+  --device 0,1,2,3 \
+  --test_random 0
